@@ -59,29 +59,6 @@ static void	append_node(t_stack_node **stack, int num_val)
 	}
 }
 
-// void	build_stack_a(t_stack_node **a, char **argv)
-// {
-// 	long	num_val;
-// 	int		i;
-
-// 	i = 0;
-// 	while (argv[i])
-// 	{
-// 		if (is_valid_syntax(argv[i]))
-// 		{
-// 			write(2, "Error: Invalid number\n", 23);
-// 			handle_error_and_exit(a);
-// 		}
-// 		num_val = ft_atol(argv[i]);
-// 		if (num_val < INT_MIN || num_val > INT_MAX)
-// 			handle_error_and_exit(a);
-// 		if (has_duplicate(*a, num_val))
-// 			handle_error_and_exit(a);
-// 		append_node(a, (int)num_val);
-// 		i++;
-// 	}
-// }
-
 int	build_stack_a(t_stack_node **a, char **argv)
 {
 	long	num_val;
